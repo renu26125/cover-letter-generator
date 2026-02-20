@@ -1,8 +1,8 @@
-📄 Cover Letter Generator
+#📄 Cover Letter Generator#
 
 A simple and user-friendly web application that generates professional cover letters instantly based on user input. Users can export the generated letter as PDF or DOCX format.
 
-🚀 Features
+#🚀 Features#
 
 ✅ Clean and modern UI
 
@@ -19,7 +19,7 @@ A simple and user-friendly web application that generates professional cover let
 ✅ Responsive layout
 
 
-🛠️ Technologies Used
+#🛠️ Technologies Used#
 
 HTML5
 
