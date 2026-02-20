@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cover Letter Generator</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CV.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/docx/8.2.2/docx.min.js"></script>
+</head>
+
+<body>
+<div class="page-container">
+
+  <header class="header">
+    <h1>Cover Letter Generator</h1>
+  </header>
+
+  <main class="main-layout">
+
+    <!-- LEFT FRAME -->
+    <section class="form-section">
+
+      <div class="field-group">
+        <label>Full Name <span>*</span></label>
+        <input type="text" class="input-box">
+        <div class="error-line">
+          <span class="icon">!</span>
+          Please enter your full name.
+        </div>
+      </div>
+
+      <div class="field-group">
+        <label>Job Role <span>*</span></label>
+        <input type="text" class="input-box">
+        <div class="error-line">
+          <span class="icon">!</span>
+          Please enter your job role.
+        </div>
+      </div>
+
+      <div class="field-group">
+        <label>Company <span>*</span></label>
+        <input type="text" class="input-box">
+        <div class="error-line">
+          <span class="icon">!</span>
+          Please enter the company name.
+        </div>
+      </div>
+
+      <div class="field-group">
+        <label>Experience <span>*</span></label>
+        <input type="text" class="input-box" placeholder="e.g., 2+ years at software development">
+        <div class="error-line">
+          <span class="icon">!</span>
+          Please enter your experience.
+        </div>
+      </div>
+
+      <div class="field-group">
+        <label>Job Category <span>*</span></label>
+        <select class="input-box" id="jobType">
+          <option value="">Select your job role</option>
+
+          <optgroup label="Technical">
+            <option>Software Engineer / Developer</option>
+            <option>Data Analyst</option>
+            <option>Data Scientist</option>
+            <option>Machine Learning Engineer</option>
+            <option>Web Developer</option>
+            <option>DevOps Engineer</option>
+          </optgroup>
+
+          <optgroup label="Non-Technical">
+            <option>HR Executive</option>
+            <option>Marketing Executive</option>
+            <option>Business Analyst</option>
+            <option>Operations Executive</option>
+            <option>Content Writer</option>
+          </optgroup>
+
+          <optgroup label="Entry-Level">
+            <option>Intern</option>
+            <option>Fresher / Graduate Trainee</option>
+          </optgroup>
+        </select>
+
+        <div class="error-line">
+          <span class="icon">!</span>
+          Please select a job role.
+        </div>
+      </div>
+
+      <button id="generateBtn" class="btn generate-btn">
+        <span class="btn-text">Generate</span>
+        <span class="loader"></span>
+      </button>
+
+    </section>
+
+    <!-- RIGHT FRAME -->
+    <section class="output-section">
+      <div id="output" class="output-area">
+        Your cover letter will appear here...
+      </div>
+
+      <div class="right-actions">
+        <button id="downloadPDF" class="btn pdf-btn">Download PDF</button>
+        <button id="downloadDOCX" class="btn docx-btn">Download DOCX</button>
+        <button id="resetBtn" class="btn reset-btn">Reset</button>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<!-- JS LINKED AT BOTTOM -->
+<script src="CV.js"></script>
+</body>
+</html>
